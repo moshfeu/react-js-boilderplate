@@ -15,7 +15,8 @@ const Navbar = () => {
           type="text"
           placeholder="Search by movie title"
         />
-        <i className="fas fa-search"></i>
+        <span className={s.borderLeft}></span>
+        <i className={`fas fa-search ${s.icon}`}></i>
       </div>
       <div className={s.interactiveButtonsContainer}>
         <i className="fas fa-home"></i>

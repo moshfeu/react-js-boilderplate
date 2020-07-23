@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input::placeholder {
+  padding-left: 12px;
+}
+
+html {
+  /* background-image: url(./Assets/BackgroundImage.jpg); */
+  /* background-repeat: no-repeat; */
+  /* background-size: auto; */
+  height: 100%;
+  background-color: #fafafa;
+  background-image: url(./Assets/BackgroundImage.jpg);
+  background-position: center;
+  color: white;
+}

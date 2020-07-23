@@ -4,8 +4,8 @@
   .container {
     display: flex;
     justify-content: space-around;
-
-    background-color: none;
+    align-items: center;
+    margin-top: 1.5rem;
   }
 
   .logo,
@@ -14,7 +14,41 @@
   .fa-home {
     display: inline;
   }
+
+  // align logo heading in the middle
+  .titleAndLogoContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 3rem;
+    padding-left: 20px;
+    // TODO add different font-family
+  }
+
+  .icon {
+    color: rgba(32, 32, 32, 0.411);
+    border-left: 2px solid rgba(32, 32, 32, 0.596);
+    padding-left: .75rem;
+    font-size: 1.8rem;
+    position: relative;
+    bottom: 45px;
+    left: 450px;
+  }
+
+  .borderLeft {}
+
+  .searchBar {
+    width: 20vw;
+    height: 60px;
+    border-radius: 5px;
+
+    &::placeholder {
+      font-size: 1.2rem;
+    }
+  }
+
 }
 
-@media (max-width: 767px) {
-}
+@media (max-width: 767px) {}
