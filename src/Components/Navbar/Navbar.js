@@ -7,7 +7,9 @@ const Navbar = () => {
     <div className={s.container}>
       <div className={s.titleAndLogoContainer}>
         <i className="fas fa-film fa-4x"></i>
-        <h2 className={s.logo}>Movie Finder</h2>
+        <Link className={s.logo} to="/">
+          Movie Finder
+        </Link>
       </div>
       <div className={s.searchBar}>
         <input
@@ -20,7 +22,9 @@ const Navbar = () => {
       </div>
       <div className={s.interactiveButtonsContainer}>
         <i className="fas fa-home"></i>
-        <h3 className={s.linkDescription}>Home</h3>
+        <Link className={s.linkDescription} to="/">
+          Home
+        </Link>
         <Link className={s.link} to="auth">
           Sign In
         </Link>

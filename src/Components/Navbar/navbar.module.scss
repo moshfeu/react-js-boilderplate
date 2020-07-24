@@ -1,4 +1,4 @@
-@import '../../scss/reset.scss';
+@import '../../scss/defaultStyles.scss';
 
 @media only screen and (min-width: 767px) {
   .container {
@@ -22,19 +22,23 @@
   }
 
   .logo {
-    font-size: 3rem;
+    font-size: $logo-font-size;
     padding-left: 20px;
-    // TODO add different font-family
+    font-family: $logo-font;
+    color: $base-color;
+    cursor: pointer;
+    font-weight: 600;
   }
 
   .icon {
-    color: rgba(32, 32, 32, 0.411);
+    color: rgba(32FFB85C, 32, 32, 0.411);
     border-left: 2px solid rgba(32, 32, 32, 0.596);
     padding-left: .75rem;
     font-size: 1.8rem;
     position: relative;
     bottom: 45px;
     left: 450px;
+    cursor: pointer;
   }
 
   .borderLeft {}
@@ -43,12 +47,32 @@
     width: 20vw;
     height: 60px;
     border-radius: 5px;
+    font-size: $small-font-size;
+    padding-left: 12px;
+
 
     &::placeholder {
       font-size: 1.2rem;
     }
   }
 
+  .interactiveButtonsContainer {
+    font-size: $small-font-size;
+  }
+
+  .linkDescription {
+    padding-left: .5rem;
+  }
+
+  .link {
+    font-size: $small-font-size;
+    text-decoration: none;
+    color: $text-color-dark;
+    margin-left: 30px;
+    background-color: $attention-color;
+    padding: .4rem .7rem;
+    border-radius: 5px;
+  }
 }
 
 @media (max-width: 767px) {}
