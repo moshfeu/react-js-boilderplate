@@ -11,14 +11,12 @@ const Navbar = () => {
           Movie Finder
         </Link>
       </div>
-      <div className={s.searchBar}>
+      <div className={s.searchBarContainer}>
         <input
           className={s.searchBar}
           type="text"
           placeholder="Search by movie title"
         />
-        <span className={s.borderLeft}></span>
-        <i className={`fas fa-search ${s.icon}`}></i>
       </div>
       <div className={s.interactiveButtonsContainer}>
         <i className="fas fa-home"></i>
