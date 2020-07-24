@@ -1,1 +1,9 @@
-@import '../../scss/reset.scss'
+@import '../../scss/defaultStyles.scss';
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  background-color: $text-color-dark;
+}
