@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from '@reach/router';
 import s from './navbar.module.scss';
+import { QueryContext } from '../../QueryContext';
 
 const Navbar = () => {
+  const { setValue } = useContext(QueryContext);
+
   return (
     <div className={s.container}>
       <div className={s.titleAndLogoContainer}>
@@ -15,6 +18,7 @@ const Navbar = () => {
         <input
           className={s.searchBar}
           type="text"
+          onChange={(e) => setValue(e.target.value)}
           placeholder="Search by movie title"
         />
       </div>
